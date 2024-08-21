@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Lab_2</string>
+    <string name="diseases_info">Diseases Information</string>
+    <string name="find">Find Diseases</string>
+    <string name="infoss">Information</string>
+    <string-array name="spinner">
+        <item>Monkey Pox</item>
+        <item>Covid 19</item>
+        <item>Dengue</item>
+        <item>Ebola</item>
+    </string-array>
+</resources>
