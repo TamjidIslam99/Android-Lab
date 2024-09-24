@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Price Calculator"
+        android:textSize="24sp"
+        android:layout_centerHorizontal="true"/>
+
+    <EditText
+        android:id="@+id/original_price_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Original Price"
+        android:inputType="numberDecimal"
+        android:layout_below="@id/title"
+        android:layout_marginTop="16dp"/>
+
+    <EditText
+        android:id="@+id/payment_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Given Payment"
+        android:inputType="numberDecimal"
+        android:layout_below="@id/original_price_input"
+        android:layout_marginTop="16dp"/>
+
+    <EditText
+        android:id="@+id/discount_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Discount (%)"
+        android:inputType="numberDecimal"
+        android:layout_below="@id/payment_input"
+        android:layout_marginTop="16dp"/>
+
+    <Button
+        android:id="@+id/calculate_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Calculate"
+        android:layout_below="@id/discount_input"
+        android:layout_marginTop="16dp"/>
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/calculate_button"
+        android:layout_marginTop="16dp"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/change_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/result"
+        android:layout_marginTop="8dp"
+        android:textSize="20sp"/>
+
+</RelativeLayout>
